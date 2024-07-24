@@ -1,12 +1,13 @@
 import './App.css'
-import FormHook from './FormHook.tsx'
+import UseReducer from './useReducer.tsx'
 
 function App() {
   return (
     <>
       <div style={{ width: '500px' }}>
         {/*<UseStateOrRef></UseStateOrRef>*/}
-        <FormHook></FormHook>
+        {/*<FormHook></FormHook>*/}
+        <UseReducer></UseReducer>
       </div>
     </>
   )
