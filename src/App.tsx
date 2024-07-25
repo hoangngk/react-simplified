@@ -1,15 +1,20 @@
 import './App.css'
-import UseReducer from './useReducer.tsx'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Navbar from './Navbar.tsx'
+import Home from './Home.tsx'
+import Store from './Store.tsx'
+import About from './About.tsx'
 
 function App() {
   return (
-    <>
-      <div style={{ width: '500px' }}>
-        {/*<UseStateOrRef></UseStateOrRef>*/}
-        {/*<FormHook></FormHook>*/}
-        <UseReducer></UseReducer>
-      </div>
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/store" element={<Store />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
