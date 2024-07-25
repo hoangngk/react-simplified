@@ -20,6 +20,16 @@ const TeamNav = () => {
             Team Member - Sally
           </Link>
         </li>
+        <li>
+          <Link to=".." className="hover:text-gray-300">
+            .. Route
+          </Link>
+        </li>
+        <li>
+          <Link to=".." relative="path" className="hover:text-gray-300">
+            .. Path
+          </Link>
+        </li>
       </ul>
     </nav>
   )

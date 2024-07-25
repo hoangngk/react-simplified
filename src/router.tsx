@@ -41,23 +41,23 @@ export const router = createBrowserRouter([
         path: '/about',
         element: <About />,
       },
-    ],
-  },
-  {
-    path: '/team',
-    element: <TeamLayout />,
-    children: [
       {
-        index: true,
-        element: <Team />,
-      },
-      {
-        path: 'joe',
-        element: <TeamMember name="joe" />,
-      },
-      {
-        path: 'sally',
-        element: <TeamMember name="sally" />,
+        path: '/team',
+        element: <TeamLayout />,
+        children: [
+          {
+            index: true,
+            element: <Team />,
+          },
+          {
+            path: 'joe',
+            element: <TeamMember name="joe" />,
+          },
+          {
+            path: 'sally',
+            element: <TeamMember name="sally" />,
+          },
+        ],
       },
     ],
   },
