@@ -6,6 +6,11 @@ const TeamNav = () => {
     <nav className="bg-gray-800 text-white p-6 shadow-md">
       <ul className="flex space-x-4 justify-center text-lg">
         <li>
+          <Link to="/" className="hover:text-gray-300">
+            Home
+          </Link>
+        </li>
+        <li>
           <Link to="/team/joe" className="hover:text-gray-300">
             Team Member - Joe
           </Link>
