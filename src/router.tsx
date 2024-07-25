@@ -20,7 +20,7 @@ const TeamLayout = () => {
   return (
     <>
       <TeamNav />
-      <Outlet />
+      <Outlet context={{ role: 'user' }} />
     </>
   )
 }
